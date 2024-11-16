@@ -3,7 +3,7 @@ package ej1;
 import java.util.Scanner;
 
 public class Main {
-	private static boolean handler;
+	private static boolean handler = true;
 	private static Menu m = new Menu();
 	private static final Scanner abielto = new Scanner(System.in);
 
@@ -11,9 +11,9 @@ public class Main {
 		while (handler) {
 			m.mostrarMenu();
 			int valor = abielto.nextInt();
-			if(valor != 10) {
-				m.elegir(valor);
-			}else {
+			if (valor == 10) {
+				handler = false;
+			} else {
 				handler = false;
 			}
 
