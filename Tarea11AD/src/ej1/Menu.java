@@ -18,43 +18,55 @@ public class Menu {
 		System.out.println("7. Eliminar alumno por Apellido");
 		System.out.println("8. Guardar todos los alumnos en fichero Json");
 		System.out.println("9. Leer alumnos del JSON guardarlos en la BD");
+		System.out.println("10. Salir");
 	}
 
 	public void elegir(int valor) {
 		switch (valor) {
 		case 1: {
 			c.crear1Alumno();
+			break;
 		}
 		case 2:{
 			c.leerAlumnos();
+			break;
 		}
 		case 3:{
 			m.escribirEnFicheroBinario(c.getListaAlumnos());
+			break;
 		}
 		case 4:{
 			m.leerDeFicheroBinario();
 			mb.guardarAlumno(c.getListaAlumnos());
+			break;
 		}
 		case 5:{
 			System.out.println("Dime el nia por el que quiers cambiar el nombre al alumno");
 			mb.modificarNombreAlumno(abielto.nextInt());
+			break;
 		}
 		case 6:{
 			System.out.println("Dime el nia por el que quiers eliminar al alumno");
 			abielto.nextLine();
 			mb.eliminarAlumnoPorNia(abielto.nextInt());
+			break;
 		}
 		case 7:{
 			System.out.println("Dime el apellido por el que quiers eliminar al alumno");
 			abielto.nextLine();
 			mb.eliminarAlumnoPorApellido(abielto.nextLine());
+			break;
 		}
 		case 8:{
 			m.escribirEnFicheroJson(c.getListaAlumnos());
+			break;
 		}
 		case 9:{
 			m.leerDeUnFicheroJson();
-			
+			break;		
+		}
+		case 10:{
+			break;
 		}
 
 		}
