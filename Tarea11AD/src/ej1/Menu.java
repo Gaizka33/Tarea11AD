@@ -63,6 +63,7 @@ public class Menu {
 		}
 		case 9:{
 			m.leerDeUnFicheroJson();
+			mb.guardarAlumno(m.getLista());
 			break;		
 		}
 		case 10:{

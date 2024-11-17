@@ -81,7 +81,7 @@ public class ManjeoFihceros {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-
+	
 	}
 
 	public void leerDeUnFicheroJson() {
@@ -97,4 +97,14 @@ public class ManjeoFihceros {
 		}
 
 	}
+
+	public List<Alumno> getLista() {
+		return lista;
+	}
+
+	public void setLista(List<Alumno> lista) {
+		this.lista = lista;
+	}
+	
+	
 }
