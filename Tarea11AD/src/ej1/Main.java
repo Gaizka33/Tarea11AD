@@ -11,10 +11,11 @@ public class Main {
 		while (handler) {
 			m.mostrarMenu();
 			int valor = abielto.nextInt();
+			m.elegir(valor);
 			if (valor == 10) {
 				handler = false;
 			} else {
-				handler = false;
+				handler = true;
 			}
 
 		}
